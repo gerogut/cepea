@@ -108,11 +108,11 @@ function rdrakeCategoryShortcode_function($incomingfromhandler) {
                 $rdscf_output.='<div class=csc_post_thumbnail>' . get_the_post_thumbnail($rdcsc_posts->ID, 'thumbnail') . '</div>';
 
                 $rdscf_output.='<div class=csc_post_title><a href="' . get_permalink($rdcsc_posts ->ID).'">' . the_title("", "", false) .'</a></div>';
-                $rdscf_output.='<div class=csc_post_date>' . the_date('','','',FALSE) .'</div>';
-                $rdscf_output.='<div class=csc_post_author>' . $rdcsc_author . '</div>';
-                foreach((get_the_category()) as $category) {
-                    $rdscf_output.='<div class=csc_post_category>' . $category->cat_name . '</div>';
-                }
+                //$rdscf_output.='<div class=csc_post_date>' . the_date('','','',FALSE) .'</div>';
+                //$rdscf_output.='<div class=csc_post_author>' . $rdcsc_author . '</div>';
+                //foreach((get_the_category()) as $category) {
+                //    $rdscf_output.='<div class=csc_post_category>' . $category->cat_name . '</div>';
+                //}
                 $rdscf_output.='<div class=csc_post_excerpt>' . $rdcsc_excerpt . '</div>';
                 $rdscf_output.='<div class=csc_break></div>';
                 $rdscf_output.='</div>';
@@ -127,15 +127,17 @@ function rdrakeCategoryShortcode_function($incomingfromhandler) {
 
                 // added in 1.3 release
                 $rdscf_output.='<div class=csc_post csc_title>';
-
+				
+				$rdscf_output.='<div class=csc_post_date>' . the_date('','','',FALSE) .'</div>';
                 $rdscf_output.='<div class=csc_post_title><a href="' . get_permalink($rdcsc_posts ->ID).'">' . the_title("", "", false) .'</a></div>';
-                $rdscf_output.='<div class=csc_post_date>' . the_date('','','',FALSE) .'</div>';
-                $rdscf_output.='<div class=csc_post_author>' . $rdcsc_author . '</div>';
-                foreach((get_the_category()) as $category) {
-                    $rdscf_output.='<div class=csc_post_category>' . $category->cat_name . '</div>';
-                }
+                
+                //$rdscf_output.='<div class=csc_post_author>' . $rdcsc_author . '</div>';
+                //foreach((get_the_category()) as $category) {
+                  //  $rdscf_output.='<div class=csc_post_category>' . $category->cat_name . '</div>';
+                //}
                 $rdscf_output.='<div class=csc_break></div>';
                 $rdscf_output.='</div>';
+                $rdscf_output.='</br>';
             endforeach;
             break;
         case 'full':
