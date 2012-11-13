@@ -178,7 +178,7 @@ msgstr "%"
 #: ../content-quote.php:35
 #: ../content-status.php:34
 #: ../content.php:54
-msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgid "Leer + <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Seguir leyendo <span class=\"meta-nav\">&rarr;</ span>"
 
 #: ../content-aside.php:35

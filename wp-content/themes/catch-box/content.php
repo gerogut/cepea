@@ -51,7 +51,7 @@
             </div><!-- .entry-summary -->
 		<?php else : ?>
 		<div class="entry-content">
-			<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'catchbox' ) ); ?>
+			<?php the_content( __( 'Leer + <span class="meta-nav">&rarr;</span>', 'catchbox' ) ); ?>
 			<?php wp_link_pages( array( 
                 'before'		=> '<div class="page-link"><span class="pages">' . __( 'Pages:', 'catchbox' ) . '</span>',
                 'after'			=> '</div>',

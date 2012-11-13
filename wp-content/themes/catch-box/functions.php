@@ -369,10 +369,10 @@ function catchbox_excerpt_length( $length ) {
 add_filter( 'excerpt_length', 'catchbox_excerpt_length' );
 
 /**
- * Returns a "Continue Reading" link for excerpts
+ * Returns a "Leer +" link for excerpts
  */
 function catchbox_continue_reading_link() {
-	return ' <a class="more-link" href="'. esc_url( get_permalink() ) . '">' . __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'catchbox' ) . '</a>';
+	return ' <a class="more-link" href="'. esc_url( get_permalink() ) . '">' . __( 'Leer + <span class="meta-nav">&rarr;</span>', 'catchbox' ) . '</a>';
 }
 
 /**
@@ -387,7 +387,7 @@ function catchbox_auto_excerpt_more( $more ) {
 add_filter( 'excerpt_more', 'catchbox_auto_excerpt_more' );
 
 /**
- * Adds a pretty "Continue Reading" link to custom post excerpts.
+ * Adds a pretty "Leer +" link to custom post excerpts.
  *
  * To override this link in a child theme, remove the filter and add your own
  * function tied to the get_the_excerpt filter hook.

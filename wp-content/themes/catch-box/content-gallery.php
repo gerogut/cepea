@@ -29,7 +29,7 @@
 		<?php else : ?>
 		<div class="entry-content">
 			<?php if ( post_password_required() ) : ?>
-				<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'catchbox' ) ); ?>
+				<?php the_content( __( 'Leer + <span class="meta-nav">&rarr;</span>', 'catchbox' ) ); ?>
 
 			<?php else : ?>
 				<?php
