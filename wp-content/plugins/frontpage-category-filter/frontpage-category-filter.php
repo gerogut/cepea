@@ -3,7 +3,7 @@
  Plugin Name: Frontpage category filter
  Plugin URI: http://wppluginspool.com/wpplugins/wp-filter-post-categories/
  Description: This plugin allows you to choose which post categories youe site will show on the homepage. Just go to settings and deselect the categories that you want to hide.
- Version: 1.0.1
+ Version: 1.0.2
  Author: Cristian Merli
  Author URI: http://wppluginspool.com
  */
@@ -121,6 +121,8 @@ class MerlicFilterCategoryLite {
 		
 		$output .= '<br /><h4>More plugins from the same author</h4>';
 		$output .= 'Please visit <a href="http://wppluginspool.com">Wordpress Plugins Store</a> for more plugins.';
+		$output .= '<br/><h4>Free Ebooks offered</h4>';
+		$output .= 'Please visit <a href="http://thedollarebook.com">The Dollar Ebook</a> for free ebooks from the author.';
 		$output .= '
 			</div>
 		';
