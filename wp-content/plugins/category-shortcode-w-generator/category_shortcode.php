@@ -107,7 +107,7 @@ function rdrakeCategoryShortcode_function($incomingfromhandler) {
                 /// thumbnail added in 1.2 release
                 $rdscf_output.='<div class=csc_post_thumbnail>' . get_the_post_thumbnail($rdcsc_posts->ID, 'thumbnail') . '</div>';
 
-                $rdscf_output.='<div class=csc_post_title><a href="' . get_permalink($rdcsc_posts ->ID).'">' . the_title("", "", false) .'</a></div>';
+                $rdscf_output.='<div class=csc_post_title><b><a href="' . get_permalink($rdcsc_posts ->ID).'">' . the_title("", "", false) .'</a></b></div>';
                 //$rdscf_output.='<div class=csc_post_date>' . the_date('','','',FALSE) .'</div>';
                 //$rdscf_output.='<div class=csc_post_author>' . $rdcsc_author . '</div>';
                 //foreach((get_the_category()) as $category) {
@@ -129,7 +129,7 @@ function rdrakeCategoryShortcode_function($incomingfromhandler) {
                 $rdscf_output.='<div class=csc_post csc_title>';
 				
 				$rdscf_output.='<div class=csc_post_date>' . the_date('','','',FALSE) .'</div>';
-                $rdscf_output.='<div class=csc_post_title><a href="' . get_permalink($rdcsc_posts ->ID).'">' . the_title("", "", false) .'</a></div>';
+                $rdscf_output.='<div class=csc_post_title><b>•<a href="' . get_permalink($rdcsc_posts ->ID).'">' . the_title("", "", false) .'</a></b></div>';
                 
                 //$rdscf_output.='<div class=csc_post_author>' . $rdcsc_author . '</div>';
                 //foreach((get_the_category()) as $category) {
