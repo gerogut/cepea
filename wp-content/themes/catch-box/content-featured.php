@@ -34,9 +34,9 @@ global $feature_class;
 			/* translators: used between list items, there is a space after the comma */
 			$tag_list = get_the_tag_list( '', __( ', ', 'catchbox' ) );
 			if ( '' != $tag_list ) {
-				$utility_text = __( 'This entry was posted in %1$s and tagged %2$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'catchbox' );
+				//$utility_text = __( 'This entry was posted in %1$s and tagged %2$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'catchbox' );
 			} else {
-				$utility_text = __( 'This entry was posted in %1$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'catchbox' );
+				//$utility_text = __( 'This entry was posted in %1$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'catchbox' );
 			}
 			printf(
 				$utility_text,

@@ -70,10 +70,10 @@
 				$categories_list = get_the_category_list( __( ', ', 'catchbox' ) );
 				if ( $categories_list ):
 			?>
-			<span class="cat-links">
+			<!--<span class="cat-links">
 				<?php printf( __( '<span class="%1$s">Posted in</span> %2$s', 'catchbox' ), 'entry-utility-prep entry-utility-prep-cat-links', $categories_list );
 				$show_sep = true; ?>
-			</span>
+			</span>-->
 			<?php endif; // End if categories ?>
 			<?php
 				/* translators: used between list items, there is a space after the comma */
