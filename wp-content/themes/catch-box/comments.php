@@ -37,9 +37,9 @@
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav id="comment-nav-above">
-			<h1 class="assistive-text"><?php _e( 'Comment navigation', 'catchbox' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'catchbox' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'catchbox' ) ); ?></div>
+			<h1 class="assistive-text"><?php _e( 'Navegación de comentarios', 'catchbox' ); ?></h1>
+			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Comentarios Anteriores', 'catchbox' ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( __( 'Comentarios Recientes &rarr;', 'catchbox' ) ); ?></div>
 		</nav>
 		<?php endif; // check for comment navigation ?>
 
@@ -57,9 +57,9 @@
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav id="comment-nav-below">
-			<h1 class="assistive-text"><?php _e( 'Comment navigation', 'catchbox' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'catchbox' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'catchbox' ) ); ?></div>
+			<h1 class="assistive-text"><?php _e( 'Navegación de Comentarios', 'catchbox' ); ?></h1>
+			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Comentarios Anteriores', 'catchbox' ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( __( 'Comentarios Recientes &rarr;', 'catchbox' ) ); ?></div>
 		</nav>
 		<?php endif; // check for comment navigation ?>
 
@@ -69,7 +69,7 @@
 		 */
 		elseif ( ! comments_open() && ! is_page() && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
-		<p class="nocomments"><?php _e( 'Comments are closed.', 'catchbox' ); ?></p>
+		<p class="nocomments"><?php _e( 'Los Comentarios están cerrados.', 'catchbox' ); ?></p>
 	<?php endif; ?>
 
 	<?php comment_form(); ?>

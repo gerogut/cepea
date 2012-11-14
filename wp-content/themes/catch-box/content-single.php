@@ -18,7 +18,7 @@
                 <?php if ( comments_open() && ! post_password_required() ) : ?>
                     <span class="sep"> &mdash; </span>
                     <span class="comments-link">
-                        <?php comments_popup_link(__('No Comments &darr;', 'catchbox'), __('1 Comment &darr;', 'catchbox'), __('% Comments &darr;', 'catchbox')); ?>
+                        <?php comments_popup_link(__('Sin Comentarios &darr;', 'catchbox'), __('1 Comentario &darr;', 'catchbox'), __('% Comentarios &darr;', 'catchbox')); ?>
                     </span>
                 <?php endif; ?>
             </div><!-- .entry-meta -->
