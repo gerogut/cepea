@@ -11,7 +11,7 @@ global $feature_class;
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class( $feature_class ); ?>>
 	<header class="entry-header">
-		<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'catchbox' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+		<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Link permanente a %s', 'catchbox' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 
 		<div class="entry-meta">
 			<?php catchbox_posted_on(); ?>
@@ -21,7 +21,7 @@ global $feature_class;
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
 		<?php wp_link_pages( array( 
-			'before'		=> '<div class="page-link"><span class="pages">' . __( 'Pages:', 'catchbox' ) . '</span>',
+			'before'		=> '<div class="page-link"><span class="pages">' . __( 'Paginas:', 'catchbox' ) . '</span>',
 			'after'			=> '</div>',
 			'link_before' 	=> '<span>',
 			'link_after'   	=> '</span>',
@@ -48,6 +48,6 @@ global $feature_class;
 			);
 		?>
 
-		<?php edit_post_link( __( 'Edit', 'catchbox' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php edit_post_link( __( 'Editar', 'catchbox' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-meta -->
 </article><!-- #post-<?php the_ID(); ?> -->

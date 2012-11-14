@@ -12,9 +12,9 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<nav id="nav-single">
-					<h3 class="assistive-text"><?php _e( 'Image navigation', 'catchbox' ); ?></h3>
-					<span class="nav-previous"><?php previous_image_link( false, __( '&larr; Previous' , 'catchbox' ) ); ?></span>
-					<span class="nav-next"><?php next_image_link( false, __( 'Next &rarr;' , 'catchbox' ) ); ?></span>
+					<h3 class="assistive-text"><?php _e( 'Navegación de imágenes', 'catchbox' ); ?></h3>
+					<span class="nav-previous"><?php previous_image_link( false, __( '&larr; Anterior' , 'catchbox' ) ); ?></span>
+					<span class="nav-next"><?php next_image_link( false, __( 'Siguiente &rarr;' , 'catchbox' ) ); ?></span>
 				</nav><!-- #nav-single -->
 
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -24,7 +24,7 @@ get_header(); ?>
 							<div class="entry-meta">
 								<?php
 									$metadata = wp_get_attachment_metadata();
-									printf( __( '<span class="meta-prep meta-prep-entry-date">Published </span> <span class="entry-date"><abbr class="published" title="%1$s">%2$s</abbr></span> at <a href="%3$s" title="Link to full-size image">%4$s &times; %5$s</a> in <a href="%6$s" title="Return to %7$s" rel="gallery">%8$s</a>', 'catchbox' ),
+									printf( __( '<span class="meta-prep meta-prep-entry-date">Publicado </span> <span class="entry-date"><abbr class="published" title="%1$s">%2$s</abbr></span> en <a href="%3$s" title="Link to full-size image">%4$s &times; %5$s</a> en <a href="%6$s" title="Volver a %7$s" rel="gallery">%8$s</a>', 'catchbox' ),
 										esc_attr( get_the_time() ),
 										get_the_date(),
 										esc_url( wp_get_attachment_url() ),
@@ -84,7 +84,7 @@ get_header(); ?>
 							<div class="entry-description">
 								<?php the_content(); ?>
 								<?php wp_link_pages( array( 
-                                    'before'		=> '<div class="page-link"><span class="pages">' . __( 'Pages:', 'catchbox' ) . '</span>',
+                                    'before'		=> '<div class="page-link"><span class="pages">' . __( 'Paginas:', 'catchbox' ) . '</span>',
                                     'after'			=> '</div>',
                                     'link_before' 	=> '<span>',
                                     'link_after'   	=> '</span>',
@@ -94,7 +94,7 @@ get_header(); ?>
 
 						</div><!-- .entry-content -->
                         <footer class="entry-meta">
-							<?php edit_post_link( __( 'Edit', 'catchbox' ), '<span class="edit-link">', '</span>' ); ?>
+							<?php edit_post_link( __( 'Editar', 'catchbox' ), '<span class="edit-link">', '</span>' ); ?>
                         </footer><!-- .entry-meta -->
 
 					</article><!-- #post-<?php the_ID(); ?> -->

@@ -32,7 +32,7 @@
                     <a href="<?php echo home_url('/') ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
 						<?php bloginfo('name'); ?>
             		</a>
-                    <?php esc_attr_e('. All Rights Reserved.', 'catchbox'); ?>
+                    <?php esc_attr_e('. Todos los derechos reservados.', 'catchbox'); ?>
                 </div>
                 <!--<div class="powered">
                 	<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'catchbox' ) ); ?>" title="<?php esc_attr_e( 'Powered by WordPress', 'catchbox' ); ?>" rel="generator"><?php printf( __( 'Powered by %s', 'catchbox' ), 'WordPress' ); ?></a>

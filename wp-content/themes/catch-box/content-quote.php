@@ -11,8 +11,8 @@
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<header class="entry-header">
 			<hgroup>
-				<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'catchbox' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-				<h3 class="entry-format"><?php _e( 'Quote', 'catchbox' ); ?></h3>
+				<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Link permanente a %s', 'catchbox' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+				<h3 class="entry-format"><?php _e( 'Cita', 'catchbox' ); ?></h3>
 			</hgroup>
 
 			<div class="entry-meta">
@@ -21,7 +21,7 @@
 
 			<?php if ( comments_open() && ! post_password_required() ) : ?>
 			<div class="comments-link">
-				<?php comments_popup_link( '<span class="leave-reply">' . __( 'Reply', 'catchbox' ) . '</span>', _x( '1', 'comments number', 'catchbox' ), _x( '%', 'comments number', 'catchbox' ) ); ?>
+				<?php comments_popup_link( '<span class="leave-reply">' . __( 'Responder', 'catchbox' ) . '</span>', _x( '1', 'comments number', 'catchbox' ), _x( '%', 'comments number', 'catchbox' ) ); ?>
 			</div>
 			<?php endif; ?>
 		</header><!-- .entry-header -->
@@ -34,7 +34,7 @@
 		<div class="entry-content">
 			<?php the_content( __( 'Leer + <span class="meta-nav">&rarr;</span>', 'catchbox' ) ); ?>
 			<?php wp_link_pages( array( 
-                'before'		=> '<div class="page-link"><span class="pages">' . __( 'Pages:', 'catchbox' ) . '</span>',
+                'before'		=> '<div class="page-link"><span class="pages">' . __( 'Paginas:', 'catchbox' ) . '</span>',
                 'after'			=> '</div>',
                 'link_before' 	=> '<span>',
                 'link_after'   	=> '</span>',
@@ -51,7 +51,7 @@
 				if ( $categories_list ):
 			?>
 			<span class="cat-links">
-				<?php printf( __( '<span class="%1$s">Posted in</span> %2$s', 'catchbox' ), 'entry-utility-prep entry-utility-prep-cat-links', $categories_list );
+				<?php printf( __( '<span class="%1$s">Posteado en</span> %2$s', 'catchbox' ), 'entry-utility-prep entry-utility-prep-cat-links', $categories_list );
 				$show_sep = true; ?>
 			</span>
 			<?php endif; // End if categories ?>
@@ -63,7 +63,7 @@
 			<span class="sep"> | </span>
 				<?php endif; // End if $show_sep ?>
 			<span class="tag-links">
-				<?php printf( __( '<span class="%1$s">Tagged</span> %2$s', 'catchbox' ), 'entry-utility-prep entry-utility-prep-tag-links', $tags_list );
+				<?php printf( __( '<span class="%1$s">Taggeado</span> %2$s', 'catchbox' ), 'entry-utility-prep entry-utility-prep-tag-links', $tags_list );
 				$show_sep = true; ?>
 			</span>
 			<?php endif; // End if $tags_list ?>
@@ -75,6 +75,6 @@
 			<span class="comments-link"><?php comments_popup_link( '<span class="leave-reply">' . __( 'Responder', 'catchbox' ) . '</span>', __( '<b>1</b> Respuesta', 'catchbox' ), __( '<b>%</b> Respuestas', 'catchbox' ) ); ?></span>
 			<?php endif; // End if comments_open() ?>
 
-			<?php edit_post_link( __( 'Edit', 'catchbox' ), '<span class="edit-link">', '</span>' ); ?>
+			<?php edit_post_link( __( 'Editar', 'catchbox' ), '<span class="edit-link">', '</span>' ); ?>
 		</footer><!-- #entry-meta -->
 	</article><!-- #post-<?php the_ID(); ?> -->

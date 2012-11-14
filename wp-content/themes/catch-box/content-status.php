@@ -12,13 +12,13 @@
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<header class="entry-header">
 			<hgroup>
-				<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'catchbox' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-				<h3 class="entry-format"><?php _e( 'Status', 'catchbox' ); ?></h3>
+				<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Link Permanente a %s', 'catchbox' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+				<h3 class="entry-format"><?php _e( 'Estado', 'catchbox' ); ?></h3>
 			</hgroup>
 
 			<?php if ( comments_open() && ! post_password_required() ) : ?>
 			<div class="comments-link">
-				<?php comments_popup_link( '<span class="leave-reply">' . __( 'Reply', 'catchbox' ) . '</span>', _x( '1', 'comments number', 'catchbox' ), _x( '%', 'comments number', 'catchbox' ) ); ?>
+				<?php comments_popup_link( '<span class="leave-reply">' . __( 'Responder', 'catchbox' ) . '</span>', _x( '1', 'comments number', 'catchbox' ), _x( '%', 'comments number', 'catchbox' ) ); ?>
 			</div>
 			<?php endif; ?>
 		</header><!-- .entry-header -->
@@ -33,7 +33,7 @@
 
 			<?php the_content( __( 'Leer + <span class="meta-nav">&rarr;</span>', 'catchbox' ) ); ?>
 			<?php wp_link_pages( array( 
-                'before'		=> '<div class="page-link"><span class="pages">' . __( 'Pages:', 'catchbox' ) . '</span>',
+                'before'		=> '<div class="page-link"><span class="pages">' . __( 'Paginas:', 'catchbox' ) . '</span>',
                 'after'			=> '</div>',
                 'link_before' 	=> '<span>',
                 'link_after'   	=> '</span>',
@@ -48,6 +48,6 @@
 			<span class="sep"> | </span>
 			<span class="comments-link"><?php comments_popup_link( '<span class="leave-reply">' . __( 'Responder', 'catchbox' ) . '</span>', __( '<b>1</b> Respuesta', 'catchbox' ), __( '<b>%</b> Respuestas', 'catchbox' ) ); ?></span>
 			<?php endif; ?>
-			<?php edit_post_link( __( 'Edit', 'catchbox' ), '<span class="edit-link">', '</span>' ); ?>
+			<?php edit_post_link( __( 'Editar', 'catchbox' ), '<span class="edit-link">', '</span>' ); ?>
 		</footer><!-- #entry-meta -->
 	</article><!-- #post-<?php the_ID(); ?> -->

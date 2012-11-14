@@ -19,13 +19,13 @@ get_header(); ?>
 				<header class="page-header">
 					<h1 class="page-title">
 						<?php if ( is_day() ) : ?>
-							<?php printf( __( 'Daily Archives: %s', 'catchbox' ), '<span>' . get_the_date() . '</span>' ); ?>
+							<?php printf( __( 'Archivos diarios: %s', 'catchbox' ), '<span>' . get_the_date() . '</span>' ); ?>
 						<?php elseif ( is_month() ) : ?>
-							<?php printf( __( 'Monthly Archives: %s', 'catchbox' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', 'catchbox' ) ) . '</span>' ); ?>
+							<?php printf( __( 'Archivos Mensuales: %s', 'catchbox' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', 'catchbox' ) ) . '</span>' ); ?>
 						<?php elseif ( is_year() ) : ?>
-							<?php printf( __( 'Yearly Archives: %s', 'catchbox' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'catchbox' ) ) . '</span>' ); ?>
+							<?php printf( __( 'Archivos Anuales: %s', 'catchbox' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'catchbox' ) ) . '</span>' ); ?>
 						<?php else : ?>
-							<?php _e( 'Blog Archives', 'catchbox' ); ?>
+							<?php _e( 'Archivos del Blog', 'catchbox' ); ?>
 						<?php endif; ?>
 					</h1>
 				</header>
@@ -49,11 +49,11 @@ get_header(); ?>
 
 				<article id="post-0" class="post no-results not-found">
 					<header class="entry-header">
-						<h1 class="entry-title"><?php _e( 'Nothing Found', 'catchbox' ); ?></h1>
+						<h1 class="entry-title"><?php _e( 'Sin Resultados', 'catchbox' ); ?></h1>
 					</header><!-- .entry-header -->
 
 					<div class="entry-content">
-						<p><?php _e( 'Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post.', 'catchbox' ); ?></p>
+						<p><?php _e( 'Disculpas, no hay resultados para el archivo solicitado. Quizas una búsqueda lo ayudara a encontrar un post relacionado.', 'catchbox' ); ?></p>
 						<?php get_search_form(); ?>
 					</div><!-- .entry-content -->
 				</article><!-- #post-0 -->
