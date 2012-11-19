@@ -154,7 +154,6 @@ function rdrakeCategoryShortcode_function($incomingfromhandler) {
 
 	                $rdscf_output.='<div class=csc_break></div>';
 	                $rdscf_output.='</div>';
-	                $rdscf_output.='</br>';
 	            endforeach;
 	            break;
         case 'full':
