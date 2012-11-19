@@ -63,7 +63,7 @@ function rdrakeCategoryShortcode_function($incomingfromhandler) {
     $rd_loop_catid   = wp_specialchars_decode($incomingfromhandler["id"]);
 
     //check the values for validity in the get_posts function
-    if ( strtolower($rd_loop_method) != 'full' && strtolower($rd_loop_method) != 'excerpt' && strtolower($rd_loop_method) != "title" ) {
+    if ( strtolower($rd_loop_method) != 'full' && strtolower($rd_loop_method) != 'excerpt' && strtolower($rd_loop_method) != "title" && strtolower($rd_loop_method) != "date") {
         $rd_loop_method = 'full';
     }
 
@@ -118,7 +118,7 @@ function rdrakeCategoryShortcode_function($incomingfromhandler) {
                 $rdscf_output.='</div>';
             endforeach;
             break;
-        case 'title':
+        case 'date':
             foreach($rdcsc_posts as $post) :
                 setup_postdata($post);
                 $rdcsc_excerpt = get_the_excerpt();
@@ -140,6 +140,23 @@ function rdrakeCategoryShortcode_function($incomingfromhandler) {
                 $rdscf_output.='</br>';
             endforeach;
             break;
+			case 'title':
+	            foreach($rdcsc_posts as $post) :
+	                setup_postdata($post);
+	                $rdcsc_excerpt = get_the_excerpt();
+	                $rdcsc_author = get_the_author();
+	                $rdcsc_comments = get_comments();
+
+	                // added in 1.3 release
+	                $rdscf_output.='<div class=csc_post csc_title>';
+
+	                $rdscf_output.='<div class=csc_post_title><b>• <a href="' . get_permalink($rdcsc_posts ->ID).'">' . the_title("", "", false) .'</a></b></div>';
+
+	                $rdscf_output.='<div class=csc_break></div>';
+	                $rdscf_output.='</div>';
+	                $rdscf_output.='</br>';
+	            endforeach;
+	            break;
         case 'full':
             foreach($rdcsc_posts as $post) :
                 setup_postdata($post);
@@ -232,6 +249,7 @@ function rdcsc_admin_print() {
                 <option value='full'>Full Post</option>
                 <option value='excerpt'>Excerpt</option>
                 <option value='title'>Title</option>
+                <option value='date'>Date</option>
             </select>
         </div>
         <div class="form-field">
