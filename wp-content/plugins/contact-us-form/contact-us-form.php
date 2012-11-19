@@ -156,10 +156,10 @@ function addScript()
 		for ( i=0; i < f.length; i++ )
 		{
 			if ( f[i] == "" )
-				msg = "'.__('Please fill out all fields.', 'cuf-lang').'\nPlease fill out all fields.\n\n";
+				msg = "'.__('Por Favor completar todos los campos.', 'cuf-lang').'\n";
 		}
 		if ( !isEmail(f[2]) )
-			msg += "'.__('Wrong Email.', 'cuf-lang').'\nWrong Email.";
+			msg += "'.__('Email incorrecto.', 'cuf-lang').'";
 		if ( msg != "" )
 		{
 			alert(msg);
