@@ -1965,7 +1965,7 @@ section.recent-posts .other-recent-posts li:after {
 	font-size: 14px;
 }
 .widget a {
-	font-weight: 600;
+	font-weight: 500;
 	text-decoration: none;
 }
 .widget a:hover,
