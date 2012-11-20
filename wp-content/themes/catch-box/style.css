@@ -268,7 +268,7 @@ ul, ol {
 	margin: 0 0 2em 2.5em;
 }
 ul {
-	list-style: disc;
+	list-style-image: url('/cepea/favicon.ico');
 }
 ol {
 	list-style-type: decimal;
