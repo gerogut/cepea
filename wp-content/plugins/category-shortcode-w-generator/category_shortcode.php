@@ -129,7 +129,7 @@ function rdrakeCategoryShortcode_function($incomingfromhandler) {
                 $rdscf_output.='<div class=csc_post csc_title>';
 				
 				$rdscf_output.='<div class=csc_post_date>' . the_date('','','',FALSE) .'</div>';
-                $rdscf_output.='<div class=csc_post_title><b>• <a href="' . get_permalink($rdcsc_posts ->ID).'">' . the_title("", "", false) .'</a></b></div>';
+                $rdscf_output.='<div class=csc_post_title><img src="/cepea/favicon.ico"><b> <a href="' . get_permalink($rdcsc_posts ->ID).'">' . the_title("", "", false) .'</a></b></div>';
                 
                 //$rdscf_output.='<div class=csc_post_author>' . $rdcsc_author . '</div>';
                 //foreach((get_the_category()) as $category) {
@@ -150,7 +150,7 @@ function rdrakeCategoryShortcode_function($incomingfromhandler) {
 	                // added in 1.3 release
 	                $rdscf_output.='<div class=csc_post csc_title>';
 
-	                $rdscf_output.='<div class=csc_post_title><b>• <a href="' . get_permalink($rdcsc_posts ->ID).'">' . the_title("", "", false) .'</a></b></div>';
+	                $rdscf_output.='<div class=csc_post_title><img src="/cepea/favicon.ico"><b> <a href="' . get_permalink($rdcsc_posts ->ID).'">' . the_title("", "", false) .'</a></b></div>';
 
 	                $rdscf_output.='<div class=csc_break></div>';
 	                $rdscf_output.='</div>';
