@@ -527,7 +527,7 @@ a:hover {
 }
 #branding ul.menu a {
 	display: block;
-	font-weight: 400;
+	font-weight: bold;
 }
 #branding ul.menu ul {
 	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
@@ -588,7 +588,9 @@ a:hover {
 #branding .menu .current_page_ancestor > a,
 #colophon .menu .current-menu-item a {
 	font-weight: bold;
+	color: #ee7f00;
 }
+/*see catchbox personalized styles*/
 #access-secondary { 
 	background-color: #e6e6e6;
 	clear: both;
@@ -1965,7 +1967,7 @@ section.recent-posts .other-recent-posts li:after {
 	font-size: 14px;
 }
 .widget a {
-	font-weight: 500;
+	font-weight: bold;
 	text-decoration: none;
 }
 .widget a:hover,
