@@ -527,6 +527,7 @@ a:hover {
 }
 #branding ul.menu a {
 	display: block;
+	font-weight: 400;
 }
 #branding ul.menu ul {
 	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
@@ -1964,7 +1965,7 @@ section.recent-posts .other-recent-posts li:after {
 	font-size: 14px;
 }
 .widget a {
-	font-weight: 400;
+	font-weight: 600;
 	text-decoration: none;
 }
 .widget a:hover,
