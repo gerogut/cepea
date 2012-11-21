@@ -23,7 +23,6 @@
                 <div class="entry-meta">
                     <?php catchbox_posted_on(); ?>
                     <?php if ( comments_open() && ! post_password_required() ) : ?>
-                    	<span class="sep"> &mdash; </span>
                         <span class="comments-link">
                          	<?php comments_popup_link(__('Sin Comentarios &darr;', 'catchbox'), __('1 Comentario &darr;', 'catchbox'), __('% Comentarios &darr;', 'catchbox')); ?>
                         </span>
