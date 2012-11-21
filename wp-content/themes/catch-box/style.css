@@ -495,11 +495,11 @@ a:hover {
 
 #branding #access,
 #colophon #access-footer {
-	background: #3d3d3d; /* Show a solid color for older browsers */
-	background: -moz-linear-gradient(#585858, #3d3d3d);
-	background: -o-linear-gradient(#585858, #3d3d3d);
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#585858), to(#3d3d3d)); /* older webkit syntax */
-	background: -webkit-linear-gradient(#585858, #3d3d3d);
+	background: #404F58; /* Show a solid color for older browsers */
+	background: -moz-linear-gradient(#404F58, #3d3d3d);
+	background: -o-linear-gradient(#404F58, #3d3d3d);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#404F58), to(#3d3d3d)); /* older webkit syntax */
+	background: -webkit-linear-gradient(#404F58, #3d3d3d);
 	clear: both;
 	display: block;
 	float: left;
