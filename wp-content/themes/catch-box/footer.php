@@ -26,7 +26,6 @@
                 </nav>
             <?php } ?>
 			<div id="site-generator" class="clearfix">
-            	<?php do_action( 'catchbox_startgenerator_open' ); ?>
             	<div class="copyright">
                 	<?php esc_attr_e('Copyright &copy;', 'catchbox'); ?> <?php _e(date('Y')); ?>
                     <a href="<?php echo home_url('/') ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
@@ -34,12 +33,6 @@
             		</a>
                     <?php esc_attr_e('. Todos los derechos reservados.', 'catchbox'); ?>
                 </div>
-                <!--<div class="powered">
-                	<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'catchbox' ) ); ?>" title="<?php esc_attr_e( 'Powered by WordPress', 'catchbox' ); ?>" rel="generator"><?php printf( __( 'Powered by %s', 'catchbox' ), 'WordPress' ); ?></a>
-					<span class="sep"> | </span>
-                    <a href="<?php echo esc_url( __( 'http://catchthemes.com/', 'catchbox' ) ); ?>" title="<?php esc_attr_e( 'Theme Catch Box by Catch Internet', 'catchbox' ); ?>" rel="designer"><?php printf( __( 'Theme: %s', 'catchbox' ), 'Catch Box' ); ?></a>
-            	</div>-->
-                <?php do_action( 'catchbox_startgenerator_close' ); ?>
           	</div> <!-- #site-generator -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

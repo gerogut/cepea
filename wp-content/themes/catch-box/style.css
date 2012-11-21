@@ -658,6 +658,7 @@ a:hover {
 }
 #branding #searchform div {
 	margin: 0;
+	padding-top: 10px;
 }
 #branding #s {
 	float: right;

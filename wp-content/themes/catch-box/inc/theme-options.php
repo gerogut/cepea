@@ -1266,72 +1266,72 @@ function catchbox_socialprofile() {
  		 		<ul>';
 					//Facebook
 					if ($options['social_facebook']) {
-						$catchbox_socialprofile .= '<li class="facebook"><a href="'.$options['social_facebook'].'" title="Facebook" target="_blank">Facebook</a></li>';
+						$catchbox_socialprofile .= '<li class="facebook"><a href="'.$options['social_facebook'].'" title="" target="_blank"></a></li>';
 					}
 				
 					//Twitter
 					if ($options['social_twitter']) {
-						$catchbox_socialprofile .= '<li class="twitter"><a href="'.$options['social_twitter'].'" title="Twitter" target="_blank">Twitter</a></li>';
+						$catchbox_socialprofile .= '<li class="twitter"><a href="'.$options['social_twitter'].'" title="" target="_blank"></a></li>';
 					}
 					
 					//Google+
 					if ($options['social_google']) {
-						$catchbox_socialprofile .= '<li class="google-plus"><a href="'.$options['social_google'].'" title="Google Plus" target="_blank">Google Plus</a></li>';
+						$catchbox_socialprofile .= '<li class="google-plus"><a href="'.$options['social_google'].'" title="" target="_blank"></a></li>';
 					}
 				
 					//Linkedin
 					if ($options['social_linkedin']) {
-						$catchbox_socialprofile .= '<li class="linkedin"><a href="'.$options['social_linkedin'].'" title="Linkedin" target="_blank">Linkedin</a></li>';
+						$catchbox_socialprofile .= '<li class="linkedin"><a href="'.$options['social_linkedin'].'" title="" target="_blank"></a></li>';
 					}
 					
 					//Pinterest
 					if ($options['social_pinterest']) {
-						$catchbox_socialprofile .= '<li class="pinterest"><a href="'.$options['social_pinterest'].'" title="Pinterest" target="_blank">Pinterest</a></li>';
+						$catchbox_socialprofile .= '<li class="pinterest"><a href="'.$options['social_pinterest'].'" title="" target="_blank"></a></li>';
 					}
 					
 					//Youtube
 					if ($options['social_youtube']) {
-						$catchbox_socialprofile .= '<li class="you-tube"><a href="'.$options['social_youtube'].'" title="YouTube" target="_blank">YouTube</a></li>';
+						$catchbox_socialprofile .= '<li class="you-tube"><a href="'.$options['social_youtube'].'" title="" target="_blank"></a></li>';
 					}
 					
 					//RSS Feed
 					if ($options['social_rss']) {
-						$catchbox_socialprofile .= '<li class="rss"><a href="'.$options['social_rss'].'" title="RSS Feed" target="_blank">RSS Feed</a></li>';
+						$catchbox_socialprofile .= '<li class="rss"><a href="'.$options['social_rss'].'" title="" target="_blank"></a></li>';
 					}
 					
 					//Deviantart
 					if ($options['social_deviantart']) {
-						$catchbox_socialprofile .= '<li class="deviantart"><a href="'.$options['social_deviantart'].'" title="Deviantart" target="_blank">Deviantart</a></li>';
+						$catchbox_socialprofile .= '<li class="deviantart"><a href="'.$options['social_deviantart'].'" title="" target="_blank"></a></li>';
 					}		
 					
 					//Tumblr
 					if ($options['social_tumblr']) {
-						$catchbox_socialprofile .= '<li class="tumblr"><a href="'.$options['social_tumblr'].'" title="Tumblr" target="_blank">Tumblr</a></li>';
+						$catchbox_socialprofile .= '<li class="tumblr"><a href="'.$options['social_tumblr'].'" title="" target="_blank"></a></li>';
 					}	
 					
 					//Viemo
 					if ($options['social_viemo']) {
-						$catchbox_socialprofile .= '<li class="viemo"><a href="'.$options['social_viemo'].'" title="Viemo" target="_blank">Viemo</a></li>';
+						$catchbox_socialprofile .= '<li class="viemo"><a href="'.$options['social_viemo'].'" title="" target="_blank"></a></li>';
 					}	
 					
 					//Dribbble
 					if ($options['social_dribbble']) {
-						$catchbox_socialprofile .= '<li class="dribbble"><a href="'.$options['social_dribbble'].'" title="Dribbble" target="_blank">Dribbble</a></li>';
+						$catchbox_socialprofile .= '<li class="dribbble"><a href="'.$options['social_dribbble'].'" title="" target="_blank"></a></li>';
 					}	
 					
 					//MySpace
 					if ($options['social_myspace']) {
-						$catchbox_socialprofile .= '<li class="my-space"><a href="'.$options['social_myspace'].'" title="MySpace" target="_blank">MySpace</a></li>';
+						$catchbox_socialprofile .= '<li class="my-space"><a href="'.$options['social_myspace'].'" title="" target="_blank"></a></li>';
 					}	
 					
 					//Aim
 					if ($options['social_aim']) {
-						$catchbox_socialprofile .= '<li class="aim"><a href="'.$options['social_aim'].'" title="Aim" target="_blank">Aim</a></li>';
+						$catchbox_socialprofile .= '<li class="aim"><a href="'.$options['social_aim'].'" title="" target="_blank"></a></li>';
 					}	
 					
 					//Flicker
 					if ($options['social_flickr']) {
-						$catchbox_socialprofile .= '<li class="flickr"><a href="'.$options['social_flickr'].'" title="Flicker" target="_blank">Flicker</a></li>';
+						$catchbox_socialprofile .= '<li class="flickr"><a href="'.$options['social_flickr'].'" title="" target="_blank"></a></li>';
 					}	
 					
 					$catchbox_socialprofile .= '

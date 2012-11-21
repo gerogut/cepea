@@ -11,4 +11,8 @@
 		<label for="s" class="assistive-text"><?php _e( 'Buscar', 'catchbox' ); ?></label>
 		<input type="text" class="field" name="s" id="s" placeholder="<?php esc_attr_e( 'Buscar', 'catchbox' ); ?>" />
 		<input type="submit" class="submit" name="submit" id="searchsubmit" value="<?php esc_attr_e( 'Buscar', 'catchbox' ); ?>" />
+		<?php do_action( 'catchbox_startgenerator_open' ); ?>
+		<?php do_action( 'catchbox_startgenerator_close' ); ?>
 	</form>
+
+
