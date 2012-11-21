@@ -749,7 +749,7 @@ a:hover {
     -moz-border-radius: 5px;
 	border-radius: 5px;
     margin: 0 0 2em;
-    padding: 0.5em 5% 2em;
+    padding: 0em 5% 1em;
     position: relative;
 	width: auto;
 }
@@ -795,7 +795,7 @@ a:hover {
 }
 .entry-content,
 .entry-summary {
-	padding: 2em 0 0;
+	padding: 0em 0 0;
 }
 .page .entry-content {
 	padding: 1em 0 0;
