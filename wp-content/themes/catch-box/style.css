@@ -801,13 +801,13 @@ a:hover {
 	padding: 1em 0 0;
 }
 .hentry h1 {
-    font-size: 26px;
+    font-size: 22px;
 }
 .hentry h2 {
-    font-size: 24px;
+    font-size: 22px;
 }
 .hentry h3 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
 	margin: 0 0 0.8125em;
 }
@@ -816,10 +816,10 @@ a:hover {
     margin: 0 0 0.5em;
 }
 .hentry h5 {
-    font-size: 18px;
+    font-size: 16px;
 }
 .hentry h6 {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .entry-content h1,
