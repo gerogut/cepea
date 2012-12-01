@@ -375,6 +375,10 @@ function catchbox_continue_reading_link() {
 	return ' <a class="more-link" href="'. esc_url( get_permalink() ) . '">' . __( 'Leer + <span class="meta-nav">&rarr;</span>', 'catchbox' ) . '</a>';
 }
 
+function catchbox_delete_dots_reading_link() {
+	return ' <a class="more-link" href="'. esc_url( get_permalink() ) . '">' . __( '', 'catchbox' ) . '</a>';
+}
+
 /**
  * Replaces "[...]" (appended to automatically generated excerpts) with an ellipsis and catchbox_continue_reading_link().
  *
@@ -382,7 +386,7 @@ function catchbox_continue_reading_link() {
  * function tied to the excerpt_more filter hook.
  */
 function catchbox_auto_excerpt_more( $more ) {
-	//return catchbox_continue_reading_link();
+	return catchbox_delete_dots_reading_link();
 }
 add_filter( 'excerpt_more', 'catchbox_auto_excerpt_more' );
 
