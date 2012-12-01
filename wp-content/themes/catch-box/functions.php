@@ -382,7 +382,7 @@ function catchbox_continue_reading_link() {
  * function tied to the excerpt_more filter hook.
  */
 function catchbox_auto_excerpt_more( $more ) {
-	return catchbox_continue_reading_link();
+	//return catchbox_continue_reading_link();
 }
 add_filter( 'excerpt_more', 'catchbox_auto_excerpt_more' );
 
@@ -393,9 +393,9 @@ add_filter( 'excerpt_more', 'catchbox_auto_excerpt_more' );
  * function tied to the get_the_excerpt filter hook.
  */
 function catchbox_custom_excerpt_more( $output ) {
-	if ( has_excerpt() && ! is_attachment() ) {
+	//if ( has_excerpt() && ! is_attachment() ) {
 		$output .= catchbox_continue_reading_link();
-	}
+	//}
 	return $output;
 }
 add_filter( 'get_the_excerpt', 'catchbox_custom_excerpt_more' );
